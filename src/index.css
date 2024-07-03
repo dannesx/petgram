@@ -45,4 +45,8 @@
 	p {
 		@apply font-light leading-6 mb-2 text-dark dark:text-light;
 	}
+
+	strong {
+		@apply text-primary font-semibold
+	}
 }

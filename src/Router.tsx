@@ -1,10 +1,36 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { Home, Login, Post, Profile, Register } from './pages'
+import {
+	Home,
+	Login,
+	NewPost,
+	PostPage,
+	Profile,
+	Register,
+	Root,
+} from './pages'
 
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <Home />,
+		element: <Root />,
+		children: [
+			{
+				path: '',
+				element: <Home />,
+			},
+			{
+				path: 'post/:id',
+				element: <PostPage />,
+			},
+			{
+				path: 'post/new',
+				element: <NewPost />,
+			},
+			{
+				path: 'profile/:id',
+				element: <Profile />,
+			},
+		],
 	},
 	{
 		path: '/login',
@@ -13,14 +39,6 @@ const router = createBrowserRouter([
 	{
 		path: '/register',
 		element: <Register />,
-	},
-	{
-		path: '/post/:id',
-		element: <Post />,
-	},
-	{
-		path: '/profile/:id',
-		element: <Profile />,
 	},
 ])
 

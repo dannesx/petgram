@@ -3,7 +3,7 @@ import { At, EnvelopeSimple, Lock } from '@phosphor-icons/react'
 
 function Register() {
 	return (
-		<main className="w-screen h-screen flex justify-center items-center flex-col">
+		<section className="w-screen h-screen flex justify-center items-center flex-col">
 			<h1 className="mb-6 text-center">Cadastro</h1>
 			<form method="post">
 				<div className="flex gap-6 mb-4">
@@ -20,7 +20,7 @@ function Register() {
 				<Button text="Criar conta" marginBottom />
 				<Link path="/login" text="Já tem uma conta? faça login" textAlign='center'/>
 			</form>
-		</main>
+		</section>
 	)
 }
 export default Register

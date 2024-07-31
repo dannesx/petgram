@@ -2,7 +2,7 @@ import { Link } from './utils'
 
 function Header() {
 	return (
-		<header className="p-4 flex justify-between">
+		<header className="py-4 flex justify-between">
 			<a href="/">
 				<img src="/Logo.svg" alt="Petgram Logo" className="max-w-40" />
 			</a>

@@ -1,4 +1,4 @@
 function PostPage() {
-	return <div>PostPage</div>
+	return <section>PostPage</section>
 }
 export default PostPage

@@ -8,11 +8,12 @@ import {
 	Register,
 	Root,
 } from './pages'
+import ProtectedRoute from './components/ProtectedRoute'
 
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <Root />,
+		element: <ProtectedRoute element={<Root />} />,
 		children: [
 			{
 				path: '',
